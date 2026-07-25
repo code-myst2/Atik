@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atik Anwar (Tamim) | Editor-in-Chief & Digital Creator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Hind Siliguri for Bengali typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            primary: '#0D1117',
+                            secondary: '#161B22',
+                            accent: '#1F2937',
+                            emerald: '#059669',
+                            blue: '#2563EB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F17;
+            color: #E5E7EB;
+            font-family: 'Hind Siliguri', 'Outfit', sans-serif;
+        }
+        .glass-card {
+            background: rgba(22, 27, 34, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(11, 15, 23, 1) 70%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <img src="https://res.cloudinary.com/dak8rgroe/image/upload/v1784944762/img_4_1784944070011_anvbun.jpg" 
+                         alt="Atik Anwar" 
+                         class="w-11 h-11 rounded-full border-2 border-amber-500 object-cover shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform"
+                         onerror="this.src='https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=200'">
+                    <div>
+                        <span class="text-xl font-bold tracking-wide text-white block leading-tight">Atik Anwar</span>
+                        <span class="text-xs text-amber-400 font-medium tracking-wider uppercase">Tamim</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-amber-400 transition">আমার সম্পর্কে</a>
+                    <a href="#work" class="text-gray-300 hover:text-amber-400 transition">অভিজ্ঞতা</a>
+                    <a href="#videos" class="text-gray-300 hover:text-amber-400 transition">জনপ্রিয় ভিডিও</a>
+                    <a href="#gallery" class="text-gray-300 hover:text-amber-400 transition">গ্যালারি</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-semibold hover:brightness-110 transition shadow-lg shadow-amber-500/20">
+                        যোগাযোগ করুন
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 text-gray-400 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-t border-gray-800 px-4 pt-4 pb-6 space-y-3">
+            <a href="#about" class="block text-gray-300 hover:text-amber-400 py-2 text-base">আমার সম্পর্কে</a>
+            <a href="#work" class="block text-gray-300 hover:text-amber-400 py-2 text-base">অভিজ্ঞতা</a>
+            <a href="#videos" class="block text-gray-300 hover:text-amber-400 py-2 text-base">জনপ্রিয় ভিডিও</a>
+            <a href="#gallery" class="block text-gray-300 hover:text-amber-400 py-2 text-base">গ্যালারি</a>
+            <a href="#contact" class="block w-full text-center py-3 rounded-xl bg-amber-500 text-black font-semibold mt-4">
+                যোগাযোগ করুন
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-amber-500/30 text-amber-400 text-sm font-medium">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                        Editor-in-Chief @ Risalatul Islam BD
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
+                        আতিক আনোয়ার <span class="text-amber-400">(তামিম)</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl font-light text-amber-200/90 italic">
+                        &ldquo;Close your eyes and try to see&rdquo;
+                    </p>
+                    
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        আমি একজন ডিজিটাল ক্রিয়েটর, ভিডিও এডিটর এবং মিডিয়া কনটেন্ট ডিরেক্টর। দীর্ঘ ১০ বছর ধরে ইসলামিক মিডিয়া ও অডিও-ভিজ্যুয়াল কন্টেন্ট সম্পাদনায় সক্রিয়ভাবে যুক্ত আছি।
+                    </p>
+
+                    <!-- Stats Row -->
+                    <div class="grid grid-cols-3 gap-4 py-6 border-y border-gray-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold text-amber-400">15K+</div>
+                            <div class="text-xs sm:text-sm text-gray-400">ফেসবুক ফলোয়ার</div>
+                        </div>
+                        <div class="text-center lg:text-left border-x border-gray-800 px-2">
+                            <div class="text-2xl sm:text-3xl font-bold text-amber-400">10 Years</div>
+                            <div class="text-xs sm:text-sm text-gray-400">মিডিয়া অভিজ্ঞতা</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold text-amber-400">RIBD</div>
+                            <div class="text-xs sm:text-sm text-gray-400">Editor-in-Chief</div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://www.facebook.com/AtikAnwarTamim" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium flex items-center gap-2 shadow-lg shadow-blue-600/20 transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            ফেসবুক পেজ
+                        </a>
+                        <a href="https://youtube.com/@risalatulislambd?si=tbQOZTVbv4QEoHhR" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-medium flex items-center gap-2 shadow-lg shadow-red-600/20 transition">
+                            <i class="fa-brands fa-youtube"></i>
+                            RIBD ইউটিউব চ্যানেল
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column Profile Image -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <!-- Glow Background -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-amber-500 to-blue-600 rounded-full blur-2xl opacity-25 animate-pulse"></div>
+                        
+                        <!-- Main Profile Image Holder -->
+                        <div class="relative w-full h-full rounded-3xl overflow-hidden glass-card p-2.5 border border-amber-500/30 shadow-2xl">
+                            <div class="w-full h-full rounded-2xl overflow-hidden relative group">
+                                <img src="https://res.cloudinary.com/dak8rgroe/image/upload/v1784944762/img_4_1784944070011_anvbun.jpg" 
+                                     alt="Atik Anwar Tamim Studio" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                     onerror="this.src='https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-70"></div>
+                                <div class="absolute bottom-4 left-4 right-4 text-left">
+                                    <span class="text-xs px-2.5 py-1 rounded bg-amber-500 text-black font-semibold">Studio & Production Desk</span>
+                                    <p class="text-white font-medium text-sm mt-1">Atik Anwar (Tamim)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 -left-4 glass-card p-4 rounded-2xl border border-gray-700 shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">পদবী</div>
+                                <div class="text-sm font-bold text-white">Editor in Chief</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-amber-400 font-semibold tracking-widest text-sm uppercase mb-2">সংক্ষিপ্ত পরিচিতি</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">আমার কন্টেন্ট ও কাজের ক্ষেত্র</h3>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/50 transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">কন্টেন্ট ডিরেকশন</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        দীর্ঘদিন ধরে ইসলামিক ও তথ্যমূলক কন্টেন্ট পরিকল্পনা, ভিডিও এডিটিং এবং মানসম্মত বার্তা দর্শকদের মাঝে পৌঁছে দিচ্ছি।
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/50 transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">ভিডিওগ্রাফি ও প্রোডাকশন</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        ক্যামেরা সেশন, ফিল্ড শুটিং ও স্টুডিও প্রোডাকশনে সরাসরি যুক্ত থেকে আধুনিক ভিজ্যুয়াল তৈরি করতে পছন্দ করি।
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/50 transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">সম্পাদনা ও নেতৃত্ব</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Risalatul Islam BD (RIBD)-তে ২০১৬ সাল থেকে 'Editor-in-Chief' হিসেবে নিয়মিত সম্পাদকীয় দায়িত্ব পালন করে আসছি।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Personal Info Strip -->
+            <div class="mt-12 glass-card rounded-2xl p-6 sm:p-8 flex flex-wrap items-center justify-between gap-6 border border-gray-800">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-amber-400 text-xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400">বর্তমান অবস্থান</div>
+                        <div class="text-base font-semibold text-white">ঢাকা, বাংলাদেশ (মূল বাড়ি: ময়মনসিংহ)</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-amber-400 text-xl">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400">বর্তমান কর্মস্থল</div>
+                        <div class="text-base font-semibold text-white">Risalatul Islam BD (RIBD)</div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium text-sm">
+                        বার্তা পাঠান <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-amber-400 font-semibold tracking-widest text-sm uppercase mb-2">কাজের অভিজ্ঞতা</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">কর্মজীবন ও পোর্টফোলিও ইতিহাস</h3>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative border-l-2 border-gray-800 pl-6 sm:pl-8 space-y-12">
+                <!-- Timeline Item 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-6 h-6 rounded-full bg-amber-500 border-4 border-slate-950"></div>
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl border border-amber-500/20">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-semibold">
+                                ২৬ আগস্ট ২০১৬ — বর্তমান (১০ বছর)
+                            </span>
+                            <span class="text-xs text-gray-400">ঢাকা, বাংলাদেশ</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-1">Editor-in-Chief (প্রধান সম্পাদক)</h4>
+                        <div class="text-amber-400 font-medium text-sm mb-4">Risalatul Islam BD (RIBD)</div>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            দীর্ঘ ১০ বছর ধরে প্রধান সম্পাদক হিসেবে কন্টেন্ট ডিরেকশন, অডিও-ভিজ্যুয়াল এডিটিং এবং প্ল্যাটফর্মে মিডিয়ার সামগ্রিক কার্যক্রম পরিচালনা করছি।
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-6 h-6 rounded-full bg-blue-500 border-4 border-slate-950"></div>
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-semibold">
+                                ডিজিটাল ক্রিয়েশন & সোশ্যাল মিডিয়া
+                            </span>
+                            <span class="text-xs text-gray-400">১৫,০০০+ ফলোয়ার</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-1">ডিজিটাল কন্টেন্ট ক্রিয়েটর</h4>
+                        <div class="text-blue-400 font-medium text-sm mb-4">ইউটিউব ও ফেসবুক মিডিয়া</div>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            ব্যক্তিগত ও RIBD প্ল্যাটফর্মের মাধ্যমে সচেতনতামূলক ও শিক্ষণীয় কন্টেন্ট নিয়মিত প্রকাশ করে যাচ্ছি।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Videos / Featured Works Section -->
+    <section id="videos" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-amber-400 font-semibold tracking-widest text-sm uppercase mb-2">ইউটিউব কন্টেন্ট</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">জনপ্রিয় ভিডিওসমূহ</h3>
+                </div>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="https://youtube.com/@risalatulislambd?si=tbQOZTVbv4QEoHhR" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold text-sm">
+                        RIBD চ্যানেল <i class="fa-solid fa-external-link"></i>
+      
